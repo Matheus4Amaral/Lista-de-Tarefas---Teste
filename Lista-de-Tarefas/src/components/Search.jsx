@@ -1,4 +1,3 @@
-
 const Search = ({ search, setSearch }) => {
   return (
     <div className="search">
