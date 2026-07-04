@@ -1,6 +1,4 @@
-import React from 'react'
-
-const Tasks = ({ tasks, removeTasks, completeTasks }) => {
+const Tasks = ({ tasks, onDeleteTasksClick, onCompleteTasksClick }) => {
   return (
     <div className="tasks" style={{textDecoration: tasks.isCompleted ? "line-through" : ""}}>
       <div className="content">
@@ -9,8 +7,8 @@ const Tasks = ({ tasks, removeTasks, completeTasks }) => {
       </div>
 
       <div>
-        <button className="complete" onClick={() => completeTasks(tasks.id)}>Completar</button>
-        <button className="remove" onClick={() => removeTasks(tasks.id)}>x</button>
+        <button className="complete" onClick={() => onCompleteTasksClick(tasks.id)}>Completar</button>
+        <button className="remove" onClick={() => onDeleteTasksClick(tasks.id)}>x</button>
       </div>
 
     </div>
