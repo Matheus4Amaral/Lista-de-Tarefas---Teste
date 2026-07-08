@@ -23,8 +23,9 @@ const TasksForm = ({ onAddTasksSubmit }) => {
           placeholder="Digite o título"
           value={value}
           onChange={(e) => setValue(e.target.value)}
+          required
         />
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select value={category} onChange={(e) => setCategory(e.target.value)} required>
           <option value="">Selecione uma categoria</option>
           <option value="Trabalho">Trabalho</option>
           <option value="Pessoal">Pessoal</option>

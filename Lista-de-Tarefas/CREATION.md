@@ -1,7 +1,7 @@
 # Comandos usados para este projeto
 
 ```bash
-npm create vite@lastest
+npm create vite@latest
 ```
 
 1. Lista-de-Tarefas

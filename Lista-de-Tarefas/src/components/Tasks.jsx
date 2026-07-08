@@ -11,10 +11,10 @@ const Tasks = ({ tasks, onDeleteTasksClick, onCompleteTasksClick }) => {
 
       <div>
         <button
-          className="complete"
+          className={`complete ${tasks.isCompleted === true && "remaker"}`}
           onClick={() => onCompleteTasksClick(tasks.id)}
         >
-          Completar
+          {tasks.isCompleted === true ? "Refazer Tarefa" : "Completar"}
         </button>
         <button className="remove" onClick={() => onDeleteTasksClick(tasks.id)}>
           x
